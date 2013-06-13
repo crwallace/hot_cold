@@ -6,6 +6,10 @@
     clear: both;
 }
 
+.hide{
+    display:none;
+}
+
 .home{
     width: 1024px;
     margin: auto;
@@ -32,15 +36,30 @@ header{
     text-align: center;
 }
 
-#spbubble{
-    height: 200px;
+#cryball{
+    height: 500px;
+    float: left;
+    display: inline-block; 
+    position: relative;
 }
 
+#spbubble{
+    height: 200px;
+    float: right;
+    z-index: 2;
+    position: relative;
+    margin-right: -90px;
+ }
+
 #focusimg{
-    height: 400px;
+    height: 300px;
     border-radius: 300px; 
     float: left;
-    display: inline-block;
+    display: inline-block; 
+    margin-left: 85px;
+    margin-top: -455px;
+    position: relative;
+    z-index: 1;
 }
 
 #left{

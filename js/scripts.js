@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function reset() {
     
     
     var gotcha = Math.floor((Math.random() * 10) + 1);   
@@ -8,6 +8,7 @@ $(document).ready(function () {
         $('#guess').val("");
         $('#showguess').text("Your Guess will appear here.");
         $('#close').text("I will be your guide!").show();
+        reset();
      };
 
     function hotCold(number) {
