@@ -3,6 +3,18 @@ $(document).ready(function reset() {
     
     var gotcha = Math.floor((Math.random() * 10) + 1);   
     
+    $('#guess').keypress(function(e){
+        console.log(e.keyCode);
+        if(e.keyCode == 13){
+           $('#showguess').text("You think the number is " + $('#guess').val());
+            hotCold($('#guess').val()); 
+        }
+        if(e.keyCode<48 || e.keyCode>57){
+            return false;
+        }
+    });
+
+    
     function restart(){
         $('#answer').hide();
         $('#guess').val("");
